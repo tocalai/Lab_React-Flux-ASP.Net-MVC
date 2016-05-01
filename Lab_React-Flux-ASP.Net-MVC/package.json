@@ -1,0 +1,23 @@
+{
+  "name": "Provider-Mapping",
+  "version": "1.0.0",
+  "description": "Helper for mapping competition/participant from provider.",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "flux": "^2.0.3",
+    "lodash": "^4.11.1",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "superagent": "^1.8.3",
+    "superagent-bluebird-promise": "^3.0.0",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "reactify": "^1.1.1"
+  },
+  "scripts":{
+    "build-js":"browserify -t reactify js/contents.js -o ./build/bundle.js",
+    "build-less": "lessc css/dropdown.less > css/bundle.css"
+  }
+}
